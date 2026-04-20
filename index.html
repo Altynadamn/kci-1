@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KCI | Завод микротрубок и оптических кабелей</title>
+    <meta name="description" content="KCI: завод по производству пакета микротрубки и оптических кабелей в Кентау.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar" id="topbar">
+            <a class="brand" href="#hero" aria-label="KCI">
+                <img src="./pptx_extract/ppt/media/image3.png" alt="KCI" class="brand-mark">
+                <span class="brand-copy">
+                    <strong>KCI</strong>
+                    <span>Kentau Cable Industries</span>
+                </span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-wrap">
+                <nav class="site-nav" id="siteNav">
+                    <a href="#overview" data-key="nav_overview">О заводе</a>
+                    <a href="#equipment" data-key="nav_equipment">Оборудование</a>
+                    <a href="#products" data-key="nav_products">Продукция</a>
+                    <a href="#roadmap" data-key="nav_roadmap">Развитие</a>
+                    <a href="#contacts" data-key="nav_contacts">Контакты</a>
+                </nav>
+
+                <div class="lang-switch" aria-label="Language switcher">
+                    <button type="button" class="lang-btn" data-lang="ru">RU</button>
+                    <button type="button" class="lang-btn" data-lang="kz">KZ</button>
+                    <button type="button" class="lang-btn" data-lang="en">EN</button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="hero">
+                <div class="hero-rings"></div>
+                <div class="hero-grid">
+                    <div class="hero-copy reveal">
+                        <div class="eyebrow" id="heroEyebrow"></div>
+                        <h1 id="heroTitle"></h1>
+                        <p class="hero-text" id="heroText"></p>
+                        <div class="hero-actions">
+                            <a class="btn btn-primary" href="#products" id="heroCtaPrimary"></a>
+                            <a class="btn btn-secondary" href="#roadmap" id="heroCtaSecondary"></a>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual reveal">
+                        <article class="hero-panel hero-panel-main">
+                            <img src="./pptx_extract/ppt/media/image1.jpg" alt="Производственная площадка KCI">
+                        </article>
+                        <article class="hero-panel hero-panel-map">
+                            <img src="./pptx_extract/ppt/media/image5.png" alt="Карта расположения завода">
+                        </article>
+                        <article class="hero-panel hero-panel-product">
+                            <span class="panel-label" data-key="hero_panel_label">Продукция KCI</span>
+                            <img src="./pptx_extract/ppt/media/image14.png" alt="Пакет микротрубок">
+                        </article>
+                    </div>
+                </div>
+
+                <div class="hero-metrics reveal" id="metricsGrid"></div>
+            </section>
+
+            <section class="section" id="overview">
+                <div class="section-intro reveal">
+                    <span class="section-kicker" id="overviewKicker"></span>
+                    <h2 id="overviewTitle"></h2>
+                    <p id="overviewIntro"></p>
+                </div>
+
+                <div class="fact-grid" id="factGrid"></div>
+
+                <div class="overview-split">
+                    <article class="status-card reveal">
+                        <div class="status-card-head">
+                            <span class="section-kicker" id="statusKicker"></span>
+                            <h3 id="statusTitle"></h3>
+                        </div>
+                        <ul class="status-list" id="statusList"></ul>
+                    </article>
+
+                    <article class="map-card reveal">
+                        <img src="./pptx_extract/ppt/media/image5.png" alt="Расположение завода KCI">
+                    </article>
+                </div>
+
+                <div class="factory-gallery">
+                    <article class="gallery-card gallery-card-wide reveal">
+                        <img src="./pptx_extract/ppt/media/image2.jpg" alt="Производственный цех KCI">
+                        <div class="gallery-copy">
+                            <span id="factoryGalleryLabel"></span>
+                            <h3 id="factoryGalleryTitle"></h3>
+                            <p id="factoryGalleryText"></p>
+                        </div>
+                    </article>
+                    <article class="gallery-card reveal">
+                        <img src="./pptx_extract/ppt/media/image12.jpeg" alt="Оптические кабели">
+                    </article>
+                    <article class="gallery-card reveal">
+                        <img src="./pptx_extract/ppt/media/image13.png" alt="Микротрубки KCI">
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-dark" id="equipment">
+                <div class="section-intro reveal">
+                    <span class="section-kicker" id="equipmentKicker"></span>
+                    <h2 id="equipmentTitle"></h2>
+                    <p id="equipmentIntro"></p>
+                </div>
+
+                <div class="equipment-copy-block reveal">
+                    <p id="equipmentBody1"></p>
+                    <p id="equipmentBody2"></p>
+                    <div class="supplier-strip">
+                        <span>Siemens</span>
+                        <span>Bosch</span>
+                        <span>ADVANTECH</span>
+                        <span>Panasonic</span>
+                        <span>Kaidemac</span>
+                    </div>
+                </div>
+
+                <div class="equipment-grid">
+                    <article class="equipment-card equipment-card-tall reveal">
+                        <img src="./pptx_extract/ppt/media/image6.jpeg" alt="Экструзионное оборудование">
+                        <div class="equipment-copy">
+                            <span id="equipmentCard1Label"></span>
+                            <h3 id="equipmentCard1Title"></h3>
+                        </div>
+                    </article>
+                    <article class="equipment-card reveal">
+                        <img src="./pptx_extract/ppt/media/image7.jpeg" alt="Микротрубка в линии">
+                        <div class="equipment-copy">
+                            <span id="equipmentCard2Label"></span>
+                            <h3 id="equipmentCard2Title"></h3>
+                        </div>
+                    </article>
+                    <article class="equipment-card reveal">
+                        <img src="./pptx_extract/ppt/media/image8.jpeg" alt="Линия производства кабеля">
+                        <div class="equipment-copy">
+                            <span id="equipmentCard3Label"></span>
+                            <h3 id="equipmentCard3Title"></h3>
+                        </div>
+                    </article>
+                    <article class="equipment-card reveal">
+                        <img src="./pptx_extract/ppt/media/image9.jpeg" alt="Катушки и компоненты">
+                        <div class="equipment-copy">
+                            <span id="equipmentCard4Label"></span>
+                            <h3 id="equipmentCard4Title"></h3>
+                        </div>
+                    </article>
+                    <article class="equipment-card equipment-card-wide reveal">
+                        <img src="./pptx_extract/ppt/media/image10.jpeg" alt="Производственная линия KCI">
+                        <div class="equipment-copy">
+                            <span id="equipmentCard5Label"></span>
+                            <h3 id="equipmentCard5Title"></h3>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section" id="products">
+                <div class="section-intro reveal">
+                    <span class="section-kicker" id="productsKicker"></span>
+                    <h2 id="productsTitle"></h2>
+                    <p id="productsIntro"></p>
+                </div>
+
+                <article class="product-hero reveal">
+                    <div class="product-hero-copy">
+                        <span class="section-kicker" id="productHeroKicker"></span>
+                        <h3 id="productHeroTitle"></h3>
+                        <p id="productHeroText"></p>
+                    </div>
+                    <div class="product-hero-visual">
+                        <img src="./pptx_extract/ppt/media/image19.png" alt="Производство микротрубок">
+                    </div>
+                </article>
+
+                <div class="table-stack">
+                    <article class="table-card reveal">
+                        <div class="table-head">
+                            <span id="microTableLabel"></span>
+                            <h3 id="microTableTitle"></h3>
+                        </div>
+                        <div class="data-table" id="microTable"></div>
+                    </article>
+
+                    <article class="table-card reveal">
+                        <div class="table-head">
+                            <span id="bundleTableLabel"></span>
+                            <h3 id="bundleTableTitle"></h3>
+                        </div>
+                        <div class="data-table" id="bundleTable"></div>
+                    </article>
+
+                    <article class="table-card reveal">
+                        <div class="table-head">
+                            <span id="cableTableLabel"></span>
+                            <h3 id="cableTableTitle"></h3>
+                        </div>
+                        <div class="data-table cable-table" id="cableTable"></div>
+                    </article>
+                </div>
+
+                <div class="product-gallery">
+                    <article class="gallery-card reveal">
+                        <img src="./pptx_extract/ppt/media/image12.jpeg" alt="Оптический кабель">
+                    </article>
+                    <article class="gallery-card reveal">
+                        <img src="./pptx_extract/ppt/media/image13.png" alt="Микротрубки">
+                    </article>
+                    <article class="gallery-card reveal">
+                        <img src="./pptx_extract/ppt/media/image14.png" alt="Пакеты микротрубок">
+                    </article>
+                </div>
+            </section>
+
+            <section class="section section-accent" id="roadmap">
+                <div class="section-intro reveal">
+                    <span class="section-kicker" id="roadmapKicker"></span>
+                    <h2 id="roadmapTitle"></h2>
+                    <p id="roadmapIntro"></p>
+                </div>
+
+                <div class="roadmap-grid" id="roadmapGrid"></div>
+
+                <div class="expansion-grid">
+                    <article class="expansion-card reveal">
+                        <img src="./pptx_extract/ppt/media/image15.jpeg" alt="Струйный принтер">
+                        <div class="expansion-copy">
+                            <span id="printerCardLabel"></span>
+                            <h3 id="printerCardTitle"></h3>
+                            <p id="printerCardText"></p>
+                        </div>
+                    </article>
+                    <article class="expansion-card reveal">
+                        <img src="./pptx_extract/ppt/media/image17.png" alt="Оборудование для развития линейки">
+                        <div class="expansion-copy">
+                            <span id="adssCardLabel"></span>
+                            <h3 id="adssCardTitle"></h3>
+                            <p id="adssCardText"></p>
+                        </div>
+                    </article>
+                    <article class="expansion-card reveal">
+                        <img src="./pptx_extract/ppt/media/image20.png" alt="Линия для капельного орошения">
+                        <div class="expansion-copy">
+                            <span id="irrigationCardLabel"></span>
+                            <h3 id="irrigationCardTitle"></h3>
+                            <p id="irrigationCardText"></p>
+                        </div>
+                    </article>
+                    <article class="expansion-card reveal">
+                        <img src="./pptx_extract/ppt/media/image22.png" alt="Трубы капельного орошения">
+                        <div class="expansion-copy">
+                            <span id="pipeCardLabel"></span>
+                            <h3 id="pipeCardTitle"></h3>
+                            <p id="pipeCardText"></p>
+                        </div>
+                    </article>
+                </div>
+
+                <article class="lab-banner reveal">
+                    <img src="./pptx_extract/ppt/media/image28.jpeg" alt="Тестовый трек">
+                    <div class="lab-banner-copy">
+                        <span class="section-kicker" id="labBannerKicker"></span>
+                        <h3 id="labBannerTitle"></h3>
+                        <p id="labBannerText"></p>
+                    </div>
+                </article>
+
+                <div class="lab-grid">
+                    <article class="lab-card reveal">
+                        <img src="./pptx_extract/ppt/media/image24.png" alt="Испытательная установка">
+                        <h3 id="labCard1Title"></h3>
+                        <p id="labCard1Text"></p>
+                    </article>
+                    <article class="lab-card reveal">
+                        <img src="./pptx_extract/ppt/media/image25.png" alt="Вертикальный тестовый стенд">
+                        <h3 id="labCard2Title"></h3>
+                        <p id="labCard2Text"></p>
+                    </article>
+                    <article class="lab-card reveal">
+                        <img src="./pptx_extract/ppt/media/image26.png" alt="Испытание на изгиб">
+                        <h3 id="labCard3Title"></h3>
+                        <p id="labCard3Text"></p>
+                    </article>
+                    <article class="lab-card reveal">
+                        <img src="./pptx_extract/ppt/media/image27.png" alt="Лабораторное оборудование">
+                        <h3 id="labCard4Title"></h3>
+                        <p id="labCard4Text"></p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contacts" id="contacts">
+                <article class="contact-card reveal">
+                    <div class="contact-copy">
+                        <span class="section-kicker" id="contactsKicker"></span>
+                        <h2 id="contactsTitle"></h2>
+                        <p id="contactsText"></p>
+                    </div>
+
+                    <div class="contact-meta">
+                        <a href="mailto:office@kci-kentau.kz">office@kci-kentau.kz</a>
+                        <a href="tel:+77759907573">+7 775 990 75 73</a>
+                        <a href="https://kci-kentau.kz" target="_blank" rel="noreferrer">kci-kentau.kz</a>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
